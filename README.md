@@ -62,7 +62,7 @@ calendar/
 POST /create_event
 Content-Type: application/x-www-form-urlencoded
 
-user_id=1&date=2023-12-31&text=Новый год
+user_id=1&date=2025-12-18&text=Текст1
 ```
 
 ### Обновление события
@@ -70,7 +70,7 @@ user_id=1&date=2023-12-31&text=Новый год
 POST /update_event
 Content-Type: application/x-www-form-urlencoded
 
-id=1&user_id=1&date=2024-01-01&text=Обновленный новый год
+id=1&user_id=1&date=2025-12-18&text=Текст2 
 ```
 
 ### Удаление события
@@ -83,17 +83,17 @@ id=1&user_id=1
 
 ### Получение событий на день
 ```
-GET /events_for_day?user_id=1&date=2023-12-31
+GET /events_for_day?user_id=1&date=2025-12-18
 ```
 
 ### Получение событий на неделю
 ```
-GET /events_for_week?user_id=1&date=2023-12-25
+GET /events_for_week?user_id=1&date=2025-12-18
 ```
 
 ### Получение событий на месяц
 ```
-GET /events_for_month?user_id=1&date=2023-12
+GET /events_for_month?user_id=1&date=2025-12
 ```
 
 ### Health Check
@@ -103,8 +103,8 @@ GET /health
 
 ## Форматы данных
 
-- **Дата:** YYYY-MM-DD (например, 2023-12-31)
-- **Месяц:** YYYY-MM (например, 2023-12)
+- **Дата:** YYYY-MM-DD (например, 2025-12-18)
+- **Месяц:** YYYY-MM (например, 2025-12)
 - **user_id:** Целое число, идентификатор пользователя
 - **id:** Целое число, идентификатор события
 
